@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-// import './index.css';
+import './index.css';
+
 // import App from './App';
 // import reportWebVitals from './reportWebVitals';
 
@@ -16,8 +17,33 @@ function Header() {
     <header>
       <nav>
         <img src="./react-logo.png" alt="react logo" width="40px" />
+        <ul className="nav-items">
+          <li>Pricing</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
       </nav>
     </header>
+  );
+}
+
+function Footer() {
+  return (
+    <footer>
+      <small>Copyright 2022 Palmboom development. All rights reserved.</small>
+    </footer>
+  );
+}
+
+function MainContent() {
+  return (
+    <div>
+      <h1>Reasons I'm excited to learn React</h1>
+      <ol>
+        <li>Fun</li>
+        <li>Exciting</li>
+      </ol>
+    </div>
   );
 }
 
@@ -25,14 +51,8 @@ function Page() {
   return (
     <div>
       <Header />
-      <h1>Reasons I'm excited to learn React</h1>
-      <ol>
-        <li>Fun</li>
-        <li>Exciting</li>
-      </ol>
-      <footer>
-        <small>Copyright 2022 Palmboom development. All rights reserved.</small>
-      </footer>
+      <MainContent />
+      <Footer />
     </div>
   );
 }
