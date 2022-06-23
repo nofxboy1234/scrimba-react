@@ -15,8 +15,8 @@ import './index.css';
 function Header() {
   return (
     <header>
-      <nav>
-        <img src="./react-logo.png" alt="react logo" width="40px" />
+      <nav className="nav">
+        <img src="./react-logo.png" alt="react logo" className="nav-logo" />
         <ul className="nav-items">
           <li>Pricing</li>
           <li>About</li>
@@ -42,6 +42,7 @@ function MainContent() {
       <ol>
         <li>Fun</li>
         <li>Exciting</li>
+        <li>Get job</li>
       </ol>
     </div>
   );
