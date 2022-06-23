@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import Header from './Header';
 
 // import App from './App';
 // import reportWebVitals from './reportWebVitals';
@@ -11,21 +12,6 @@ import './index.css';
 //     <App />
 //   </React.StrictMode>
 // );
-
-function Header() {
-  return (
-    <header>
-      <nav className="nav">
-        <img src="./react-logo.png" alt="react logo" className="nav-logo" />
-        <ul className="nav-items">
-          <li>Pricing</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
-      </nav>
-    </header>
-  );
-}
 
 function Footer() {
   return (
